@@ -9,5 +9,186 @@
 
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/back"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_alignParentLeft="true"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/aboutLogo"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sef" />
+
+        <TextView
+            android:id="@+id/followusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/aboutLogo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autoLink="all"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#146424"
+            android:text="Follow Us" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/socialLinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/followusTextView">
+
+            <ImageView
+                android:id="@+id/facebooklink"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/facebook"/>
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:id="@+id/twitterlink"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/twitter"/>
+
+            <ImageView
+                android:id="@+id/youtubelink"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/youtube"/>
+
+
+            <ImageView
+                android:id="@+id/websitelink"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/website"/>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/clicktoopenTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/socialLinks"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#146424"
+            android:text="Click on social icons to open" />
+
+
+        <TextView
+            android:id="@+id/contactusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/clicktoopenTextView"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:autoLink="all"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#146424"
+            android:text="Contact Us" />
+
+
+        <TextView
+            android:id="@+id/callusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactusTextView"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autoLink="all"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#146424"
+            android:text="0334-9363518\n0336-6467779" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callusTextView"
+            android:layout_marginTop="@dimen/_50sdp"
+            >
+            <TextView
+                android:id="@+id/attributionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Icons Provided By"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/flaticonButton"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/attributionTextView"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/flaticon"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/developersTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_above="@id/versionTextView"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:text="Developed by : CodingProcessor" />
+
+        <TextView
+            android:id="@+id/versionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Vesrsion 1.0.0" />
+
+
+
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
