@@ -1,15 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homesc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/SEFimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/sef"
+       app:layout_constraintTop_toTopOf="@+id/homesc"/>
+
+    <TextView
+        android:id="@+id/FU.TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_105sdp"
+        android:gravity="center_horizontal"
+        android:text="Follow Us"
+        android:textColor="#1b5e20"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/SEFimg"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/FU.TV"
+        android:layout_marginRight="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_30sdp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/twitter"
+        app:layout_constraintTop_toBottomOf="@+id/FU.TV"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        />
 
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/youtube"
+        app:layout_constraintTop_toBottomOf="@+id/FU.TV"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:id="@+id/Utube"/>
 
-</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/website"
+        app:layout_constraintTop_toBottomOf="@id/FU.TV"
+        android:layout_marginLeft="@dimen/_210sdp"
+        android:layout_marginTop="@dimen/_30sdp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click on social icons to open"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/FU.TV"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#1b5e20"
+        android:id="@+id/CK.TV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/CK.TV"
+        android:textColor="#1b5e20"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:id="@+id/CON_TV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0349-3934960"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/CON_TV"
+        android:textStyle="bold"
+        android:textColor="#1b5e20"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/NUM"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0331-5369289"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/NUM"
+        android:textStyle="bold"
+        android:textColor="#1b5e20"/>
+
+    <
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
