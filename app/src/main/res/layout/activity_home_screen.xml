@@ -6,52 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".HomeScreen">
 
-    <!-- Your Coding Will start from here>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students list"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/topLabelTv"
+        />
 
 
 
 
-
-
-
-
-
-
-    End Coding-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLabelTv"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/listView"
+        />
 
 
 
