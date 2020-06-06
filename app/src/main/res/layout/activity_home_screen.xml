@@ -21,11 +21,21 @@
 
 
     <ListView
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/_150sdp"
         android:layout_height="match_parent"
         android:layout_below="@+id/topLabelTv"
         android:layout_marginTop="@dimen/_10sdp"
         android:id="@+id/listView"
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLabelTv"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/listViewTwo"
+        android:layout_toRightOf="@+id/listView"
         />
 
 
